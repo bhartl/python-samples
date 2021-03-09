@@ -5,7 +5,7 @@ osDic = {"Darwin": "MacOS",
          "Linux": "Linux64",
          "Windows":("Win32","Win64")}
 if platform.system() != "Windows":
-    sys.path.append("PLUX-API-Python3/{}/plux.so".format(osDic[platform.system()]))
+    sys.path.append("PLUX-API-Python3/{}".format(osDic[platform.system()]))
 else:
     if platform.architecture()[0] == '64bit':
         sys.path.append("PLUX-API-Python3/Win64")
